@@ -9,6 +9,7 @@ class BaseClient():
         openPlateform.asecret = applicationSecret
         #print(openPlateform.asecret)
         openPlateform.sign_dict["_akey"] = applicationkey
+        openPlateform.headers['authenticator'] = authenticator
         return openPlateform
 
     def initBaseClient(applicationkey,applicationSecret,authenticator):

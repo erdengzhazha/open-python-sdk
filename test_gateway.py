@@ -14,5 +14,10 @@ openPlateform = util.base_client.BaseClient.initBaseClient(applicationkey,applic
 # 初始化 根据组织机构代码获取开发者帐号详细信息 api
 apiGateway = group.gateway.api_gateway.ApiGateway(openPlateform)
 # 填写参数并发送请求
-result = apiGateway.authentication(262)
+result = apiGateway.authentication(262,'v2')
 print('最终的结果='+result)
+print(apiGateway.getBusinessOrg(262))
+print(apiGateway.getRoleListByGroup())
+print(apiGateway.getMenuPrivileges())
+print('同步企业代码='+apiGateway.syscEnterpriseCode(262,262,262))
+print('获取对应角色列表对应的人员列表='+apiGateway.getRoleAndUsersAsConfig(7192))
