@@ -1,4 +1,3 @@
-import util.open_util
 import group.openplatform_base.openplatform_base_const
 import time
 class ApiOpenplatformBase():

@@ -1,4 +1,3 @@
-import util.open_util
 import group.gateway.gateway_const
 import time
 class ApiGateway():
