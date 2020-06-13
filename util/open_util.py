@@ -91,6 +91,7 @@ class OpenPlatform():
         sign = hashlib.md5(sb.encode(encoding='UTF-8')).hexdigest()
         # 转大写
         d['_sig'] = str(sign).upper()
+        # 将加密后的url记录到d
         self.d = d
         log.error(sign)
         return sign
